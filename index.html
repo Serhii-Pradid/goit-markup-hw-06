@@ -105,9 +105,20 @@
                   ></textarea>
                 </div>
                 <div class="field-policy">
-                  <input type="checkbox" name="policy" id="policy" />
-                  <label for="policy" class="form-label"
-                    >Погоджуюся з розсилкою та приймаю Умови договору</label
+                  <input
+                    type="checkbox"
+                    name="policy"
+                    class="modal-check visually-hidden"
+                    id="policy"
+                  />
+                  <label for="policy" class="check-text">
+                    <span>
+                      <svg class="check-icon" width="16" height="15">
+                        <use href="./images/icons.svg#icon-Vector"></use>
+                      </svg>
+                    </span>
+                    Погоджуюся з розсилкою та приймаю
+                    <a class="contract-form" href=""> Умови договору</a></label
                   >
                 </div>
                 <div class="form-button">
@@ -464,10 +475,14 @@
                   placeholder="E-mail"
                 />
               </div>
-              <button class="form-submit-footer" type="submit">Підписатися</button>
-              <svg class="form-buttom-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-close-black"></use>
-              </svg>
+              <div class="form-case">
+                <button class="form-submit-footer" type="submit">
+                  Підписатися
+                  <svg class="form-buttom-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send-footer"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </form>
         </div>
